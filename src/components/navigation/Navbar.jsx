@@ -56,12 +56,12 @@ const Navbar = () => {
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl mdl:hidden bg-pretoneon w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
         >
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-pretoneon p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-20" src={logo} alt="logo" />
