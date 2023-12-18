@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-full ">
-        <h3 className="text-xl uppercase text-azulciano tracking-wider">
+        <h3 className="text-xl uppercase text-verdeneon tracking-wider">
           Quick Link
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont text-white font-medium py-6 overflow-hidden">
@@ -143,7 +143,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-azulciano tracking-wider">
+        <h3 className="text-xl uppercase text-verdeneon tracking-wider">
           RESOURCES
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont text-white font-medium py-6 overflow-hidden">
@@ -180,7 +180,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-azulciano tracking-wider">
+        <h3 className="text-xl uppercase text-verdeneon tracking-wider">
           DEVELOPERS
         </h3>
         <ul className="flex flex-col gap-4 text-white font-titleFont font-medium overflow-hidden py-6">
@@ -221,7 +221,7 @@ const Footer = () => {
 
     </div>
     <div className="mt-3 h-full  bg-gradient-to-r from-pretoneon  to-azuldio">
-          <p className="text-base text-white hover:text-roxosombra xl:text-center">&copy; 2023 CoVision, Inc. All rights reserved.</p>
+          <p className="text-base text-verdeneon hover:text-roxosombra xl:text-center">&copy; 2023 CoVision, Inc. All rights reserved.</p>
       </div>
     </div>
   );
