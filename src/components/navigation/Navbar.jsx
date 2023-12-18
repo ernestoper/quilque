@@ -56,7 +56,7 @@ const Navbar = () => {
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-pretoneon w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl mdl:hidden bg-pretoneon w-10 h-10 inline-flex items-center justify-center rounded-full text-verdeneon cursor-pointer"
         >
           <FiMenu />
         </span>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 {navLinksdata.map((item) => (
                   <div
                     key={item._id}
-                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+                    className="text-base font-normal text-verdeneon tracking-wide cursor-pointer hover:text-designColor duration-300"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}
@@ -88,7 +88,7 @@ const Navbar = () => {
                 ))}
               </ul>
               <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
+                <h2 className="text-base uppercase font-titleFont mb-4 text-verdeneon">
                   Find me in
                 </h2>
                 <div className="flex gap-4">
@@ -105,7 +105,7 @@ const Navbar = () => {
               </div>
               <span
                 onClick={() => setShowMenu(false)}
-                className="absolute top-4 right-0 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
+                className="absolute top-4 right-0 text-verdeneon hover:text-designColor duration-300 text-2xl cursor-pointer"
               >
                 <MdClose />
               </span>
