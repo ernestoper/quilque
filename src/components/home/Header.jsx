@@ -88,7 +88,7 @@ const navigation = {
     },
     {
       name: 'Twitter',
-      href: '#',
+      href: 'https://twitter.com/ernestojusc',
       color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -98,7 +98,7 @@ const navigation = {
     },
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/ernestoper',
       color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -113,7 +113,7 @@ const navigation = {
 
     {
       name: 'Linkedin',
-      href: '#',
+      href: 'https://www.linkedin.com/in/victor-ernesto-alejo-juscamayta-440298b0/',
       color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="-2 0 18 14" {...props}>
@@ -133,7 +133,7 @@ function Header(){
   const { x, y } = useFollowPointer(ref);
   return (
 
- <div className="bg-azuldio relative pt-12 pb-20 lg:pt-20  ">
+ <div className="bg-pretoneon relative pt-12 pb-20 lg:pt-20  ">
 
       <motion.span
                 ref={ref}
@@ -179,12 +179,12 @@ function Header(){
                     whileInView={{y: [-100, 0], opacity: 1}}  
                     //variants={fadeIn('left', 'tween', 0.2, 1)}
                   >
-                    Olá, sou Edson
+                    Olá, sou Ernesto
                     <br className="lg:block hidden"/> 
                     <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-roxosombra to-roxosombra  ">
                       
                       <Typewriter
-                                  words={[' Designer']}
+                                  words={['Computer Vision Engineer']}
                                   loop={0}
                                   cursor
                                   
@@ -196,7 +196,7 @@ function Header(){
                                   // onType={handleType}
                               />
                     
-                    </span>.
+                    </span>
 
               </motion.div>
                 
@@ -224,7 +224,7 @@ function Header(){
                           transition={{ duration: 0.7, delay: 0.25 }}
               >
                     {navigation.social.map((item) => (
-                      <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4  rounded-full duration-300 hover:border-azulforte hover:shadow-xl hover:shadow-azulforte ">
+                      <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4  rounded-full duration-300 hover:border-anaconda hover:shadow-xl hover:shadow-anaconda ">
                         {/* <span className="sr-only">{item.name}</span> */}
                         <item.icon className={`h-10 w-10 ${item.color} hover:animate-bounce  " aria-hidden="true" alt="slack logo" loading="lazy`} />
                       </a>

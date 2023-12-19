@@ -22,13 +22,12 @@ function Home() {
     <Layout>
       <Navbar/>
       <div  className='overflow-hidden'>
-        {/* <Header/>
-        <Incentives/>
+        <Header/>
+        {/* <Incentives/>
         <Features/>
         <Trabajos/> 
         <Achievements/>     
         <CTA/> */}
-        Em construção
       </div>
 
       <Footer/>
