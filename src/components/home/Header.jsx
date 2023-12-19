@@ -1,6 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
 import home from '../../assets/PRINCIPAL/TELA-HOME/home-sem.png';
+import home01 from '../../assets/PRINCIPAL/home/02.jpeg';
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useFollowPointer } from "./useFollowPointer";
@@ -133,7 +134,7 @@ function Header(){
   const { x, y } = useFollowPointer(ref);
   return (
 
- <div className="bg-pretoneon relative pt-12 pb-20 lg:pt-20  ">
+ <div className="bg-black relative pt-12 pb-20 lg:pt-20  ">
 
       <motion.span
                 ref={ref}
@@ -208,9 +209,11 @@ function Header(){
                     transition={{ duration: 0.7, delay: 0.25 }}
               >
                       <h1 className='ml-4 sm:text-lg text-white text-3xl  lg:w-11/12'>
-                          Minha jornada no universo multimaker se inicia ainda quando criança, 
-                          afinal já apreciava passar minhas tardes elaborando edições de imagens e 
-                          seus segmentos mais diversos...
+                      Entusiasta em desvendar os desafios visuais do mundo digital e oferecer
+                       soluções inovadoras para setores como a indústria, agricultura, entre outros.
+                       Com uma ampla bagagem de experiência ao longo dos anos, minha trajetória é 
+                       impulsionada pela busca incessante da inovação e pela aplicação de soluções 
+                       práticas para solucionar problemas complexos.
                       </h1>
 
               </motion.div>
@@ -236,11 +239,16 @@ function Header(){
             </div>
 
 
-            <div className=" md:mt-0 lg:absolute  -right-10 lg:w-7/12">
-                <div className="relative w-full">
-                    <div aria-hidden="true" className="absolute lg:scale-150 lgl:scale-100 scale-80 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-azuldio to-roxosombra blur-2xl"></div>
-                    <img src={home} className=" lg:-mt-20 lg:ml-12  mdl:ml-36 ml-4 mt-8 relative lg:w-5/6 w-6/6 mdl:w-8/12" alt="wath illustration" loading="lazy" width="320" height="280"/>
-                </div>
+            <div className=" md:mt-0 lg:absolute  -right-10 lg:w-6/12"
+>
+                <motion.div className="relative w-full"                
+                initial={{x:-500, opacity: 0 }}
+                //animate={{ x: 0, opacity: 1 }}
+                whileInView={{x: [500, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.35 }}>
+                    <div aria-hidden="true" className="absolute lg:scale-150 lgl:scale-100 scale-100 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-azuldio to-roxosombra blur-2xl"></div>
+                    <img src={home01} className=" lg:-mt-20 lg:ml-32  mdl:ml-36 ml-2 mt-8 relative lg:w-4/6 w-5/6 mdl:w-6/12" alt="wath illustration" loading="lazy" width="320" height="280"/>
+                </motion.div>
             </div>
         </div>
     </div>
