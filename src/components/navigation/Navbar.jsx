@@ -27,27 +27,25 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="lg:w-full lg:h-24 h-14 flex pr-5 top-0 z-50 bg-pretoneon sticky justify-between items-center font-lg shadow-b border-b-2 border-verdeneon shadow-verdeneon">
+    <div className="lg:w-full lg:h-18 h-14 flex pr-5 top-0 z-50 bg-pretoneon sticky justify-between items-center font-lg shadow-b border-b-2 border-verdeneon shadow-anaconda">
       <div className='lg:ml-12 ml-4 '>
-        <img src={logo} alt="logo" className='lg:h-20 lg:w-44 h-14 w-18' />
+        <img src={logo} alt="logo" className='lg:h-12 lg:w-44 h-12 w-18' />
       </div>
-      <div className='bg-gradient-to-r from-roxosombra via-rosapink via-azulforte to-azulciano hover:opacity-200 rounded-full flex-shrink-0   flex-wrap items-center justify-between'>
+      <div className='bg-gradient-to-r from-anaconda via-anaconda via-anaconda to-carmesina hover:opacity-200 rounded-full flex-shrink-0   flex-wrap items-center justify-between'>
         <ul className="hidden mdl:inline-flex ">
           {navLinksdata.map(({ _id, title, link }) => (
             <div
               className=""
               key={_id}
             >
-              <Link className=' px-4 h-12 hover:text-white hover:border-2 hover:border-verdeneon  
+              
+              <Link className=' px-10 h-10 hover:text-white    
                                hover:-translate-x-1 hover:scale-110 delay-10 rounded-full 
                                items-center text-lg inline-flex font-semibold leading-6 
-                               text-white   hover:bg-gradient-to-r hover:from-azulforte hover:via-azulciano hover:via-azulciano hover:to-rosapink  transition duration-300 ease-in-out'
+                               text-white   hover:bg-gradient-to-r hover:from-rojoneon hover:via-anaconda hover:via-anaconda hover:to-anaconda  transition duration-300 ease-in-out'
                 // activeClass="active"
                 to={link}
-                // spy={true}
-                // smooth={true}
-                // offset={-70}
-                // duration={500}
+
               >
                 {title}
               </Link>
@@ -64,14 +62,14 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-pretoneon p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-20" src={logo} alt="logo" />
+                <img className="w-20 " src={logo} alt="logo" />
 
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
                   <div
                     key={item._id}
-                    className="text-base font-normal text-verdeneon tracking-wide cursor-pointer hover:text-designColor duration-300"
+                    className="text-base font-normal text-verdeneon tracking-wide cursor-pointer hover:text-anaconda duration-300"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}
@@ -88,7 +86,7 @@ const Navbar = () => {
                 ))}
               </ul>
               <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4 text-verdeneon">
+                <h2 className="text-base uppercase font-titleFont mb-4 text-laranjaneon ">
                   Find me in
                 </h2>
                 <div className="flex gap-4">
@@ -113,13 +111,13 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className='hidden mr-8   rounded-full  mdl:inline-flex items-center gap-6 lg:gap-10  text-white' >
-          <div>
+      {/* <div className='hidden mr-8    mdl:inline-flex  gap-6 lg:gap-10  text-white bg-gradient-to-r from-rojoneon via-rojoneon via-carmesina to-carmesina hover:opacity-200 rounded-full flex-shrink-0   flex-wrap items-center justify-between' >
+          <div >
           <Link
               to='/contato'
                   type= 'button'
                   //className=" hidden  hover:border-2 hover:border-white relative md:inline-flex items-center rounded-full  bg-orange-500 px-2  text-xl font-medium text-white shadow-sm hover:bg-laranjaneon focus:outline-none focus:ring-2 focus:ring-transparent "
-                className='btn  rounded-full font-primary text-white font-bold h-[50px] px-6 text-lg'
+                className='px-8 hover:-translate-x-1 hover:scale-120 delay-10 hover:text-white hover:border-2 hover:border-verdeneon   gap-8 rounded-full font-primary text-white font-bold h-[50px]  text-lg hover:bg-gradient-to-r hover:from-carmesina hover:via-rojoneon hover:via-carmesina hover:to-rojoneon '
                 >
                   Contato
                   <HashLoader className=" ml-4  h-4 w-4  mt-3 " loading={loading} size={20} color="#f2f2f2" />
@@ -128,7 +126,7 @@ const Navbar = () => {
 
           </div>
           
-        </div>
+        </div> */}
     </div>
   );
 }

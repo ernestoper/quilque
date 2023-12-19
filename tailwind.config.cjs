@@ -29,7 +29,6 @@ module.exports = {
         "neon":'#0E7373',
         "salmao":'#fd6699',
         "magenta":'#FF00FF',
-        "laranjaneon":'#FF5F1F',
         "vermelhoneon":'#fc1723',
         "pretoneon":'#1c1c1c',
         "verdecatarro":'#C8FF5D',
@@ -49,7 +48,11 @@ module.exports = {
         "azulroxoclaro":"#29013b",
         "rosapink":"#ff56f6 ",
         "azulforte":"#406aff",
-        "verdeneon":"#39ff14"
+        "verdeneon":"#39ff14",
+        "anaconda":"#43b02a",
+        "laranjaneon":"#ff4500",
+        "rojoneon":"#e32636",
+        "carmesina":"#dc143c"
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",

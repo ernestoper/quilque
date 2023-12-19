@@ -8,12 +8,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
     <FloatingWhatsApp         
-        phoneNumber="+55 81 9201-9782"
-        accountName="Edson"
+        phoneNumber="+55 81 995609503"
+        accountName="Ernesto"
         allowEsc
         allowClickAway
         notification
-        avatar={logo}
+        //avatar={logo}
         statusMessage="Respondo rapido"
         chatMessage="Oi tudo bom? 🤝 como posso lhe ajudar?"
         notificationSound/>
