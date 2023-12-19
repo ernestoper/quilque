@@ -1,5 +1,9 @@
 import { Typewriter } from 'react-simple-typewriter'
-import eu from '../../assets/PRINCIPAL/TELA-QUEM-SOU-EU/eu.png';
+import eu from '../../assets/PRINCIPAL/eu/eu.png';
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useFollowPointer } from "./useFollowPointer";
+
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -79,18 +83,25 @@ const navigation = {
   ],
 }
 function Header(){
-
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
   return (
 
  <div className="bg-azuldio relative pt-40 pb-20 lg:pt-44 ">
+        
+    <motion.span
+                ref={ref}
+                animate={{ x, y }}
+                className="hidden lg:block sec-1-bg-gradient-1-desktop md:w-[10px] 2xl:w-[140px] md:h-[10px] 2xl:h-[10px] absolute md:left-[10px] 2xl:left-[19px] -top-[79px]"
+      />
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
         <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-200 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
-        Olá, sou Edson <span> </span>
+        Um pouco sobre <span> </span>
           <br className="lg:block hidden"/> 
           <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-500  ">
             
             <Typewriter
-                        words={[' Designer']}
+                        words={[' Mim']}
                         loop={0}
                         cursor
                         
@@ -106,11 +117,22 @@ function Header(){
         </h1>
         <div className="lg:flex ">
             <div className="relative  lg:pr-32 mt-4 space-y-4 w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
-                <p className="sm:text-lg text-white text-3xl  lg:w-11/12">
-                Minha jornada no universo multimaker se inicia ainda quando criança, 
-                afinal já apreciava passar minhas tardes elaborando edições de imagens e 
-                seus segmentos mais diversos...
-                </p>
+                <motion.div className=""
+                    initial={{ opacity: 0 }}
+                    //animate={{ y: 0, opacity: 1 }}
+                    whileInView={{x: [-200, 0], opacity: 1}}
+                    transition={{ duration: 0.7, delay: 0.25 }}>
+                  <h1 className="sm:text-lg text-white text-3xl  text-justify lg:w-11/12">
+                    Com uma formação sólida em Matemática e um mestrado em Engenharia Civil, com ênfase em Simulação Numérica,
+                    minha experiência é enriquecida por uma base acadêmica robusta. Tenho amplo conhecimento teórico e prático 
+                    em Visão Computacional e Aprendizado de Máquina, destacando-me em diversos aspectos, incluindo a implementação 
+                    de algoritmos avançados e a resolução de desafios específicos como detecção e segmentação de imagens.
+
+                    Demonstro habilidades avançadas na utilização de bibliotecas essenciais de Visão Computacional, como OpenCV, Keras, 
+                    TensorFlow e PyTorch. Nos domínios do desemvolimento web tenho conhecimentos tanto no backend (FastAPI e Django), e frontend(React).
+                  </h1>
+
+                </motion.div>
 
                 <div className="grid grid-cols-4  md:space-x-2 md:flex md:justify-center lg:justify-start ">
                     {navigation.social.map((item) => (
@@ -155,11 +177,15 @@ function Header(){
                 </div> */}
                 
             </div>
-            <div className=" lg:absolute  lg:right-28 -ml-8 w-11/12 lg:w-6/12">
-                <div className="relative w-full">
+            <div className=" lg:absolute  lg:right-28 -ml-8 w-8/12 lg:w-4/12">
+                <motion.div className="relative w-full"                
+                initial={{x:-500, opacity: 0 }}
+                //animate={{ x: 0, opacity: 1 }}
+                whileInView={{x: [500, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.35 }}>
                     <div aria-hidden="true" className=""></div>
-                    <img src={eu} className="lg:mt-20 lg:ml-16 ml-10 mt-10 relative w-full" alt="wath illustration" loading="lazy"/>
-                </div>
+                    <img src={eu} className="lg:-mt-72 lg:ml-16 ml-20 -mt-20 relative w-full" alt="wath illustration" loading="lazy"/>
+                </motion.div>
             </div>
         </div>
     </div>

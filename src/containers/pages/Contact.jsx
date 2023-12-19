@@ -3,7 +3,7 @@ import Layout from '../../components/hocs/layout/Layout'
 import Footer from '../../components/navigation/Footer'
 import Navbar from '../../components/navigation/Navbar'
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import contato from '../../assets/PRINCIPAL/TELA-CONTATO/contato.png';
+import contato from '../../assets/PRINCIPAL/contato/01.jpeg';
 function Contact() {
     useEffect(()=>{
         window.scrollTo(0,0)

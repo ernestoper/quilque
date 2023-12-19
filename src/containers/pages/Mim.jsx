@@ -15,10 +15,10 @@ function Mim() {
     <Layout>
       <Navbar/>
       <div  className=''>
-        {/* <Header/> */}
+        <Header/>
         {/* <Corpo/> */}
         {/* <CTA/> */}
-        Em contrução
+
       </div>
 
       <Footer/>
