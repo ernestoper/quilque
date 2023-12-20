@@ -239,16 +239,16 @@ function Header(){
             </div>
 
 
-            <div className="  lg:absolute  lg:right-28 -ml-8 w-4/12 mt-60 lg:mt-60  lg:w-4/12 "
+            <div className="  lg:absolute  lg:right-28  w-10/12 lg:w-6/12  "
 >
                 <motion.div className="relative w-full"                
-                initial={{x:-500, opacity: 0 }}
+                initial={{x:-200, opacity: 0 }}
                 //animate={{ x: 0, opacity: 1 }}
-                whileInView={{x: [500, 0], opacity: 1}}
+                whileInView={{x: [200, 0], opacity: 1}}
                 transition={{ duration: 0.7, delay: 0.35 }}>
-                    <div aria-hidden="true" className="absolute lg:scale-150 lgl:scale-100 scale-100 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-azuldio to-roxosombra blur-2xl"></div>
+                    <div aria-hidden="true" className="absolute lg:scale-100 lgl:scale-120 scale-50 inset-0 lg:ml-80 sm:ml-10 md:ml-48 w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-azuldio to-verdeneon blur-2xl"></div>
                     <img src={home01} className=
-                    "lg:-mt-72 lg:ml-16 ml-20 -mt-20 relative w-full" alt="wath illustration" loading="lazy"/>
+                    "lg:mt-0 lg:ml-60 md:ml-44 ml-12 relative w-9/12 md:w-8/12 lg:w-8/12 sm:w-10/12 sm:ml-12" alt="wath illustration" loading="lazy"/>
                 </motion.div>
             </div>
         </div>
