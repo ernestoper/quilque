@@ -23,8 +23,8 @@ function Home() {
       <Navbar/>
       <div  className='overflow-hidden'>
         <Header/>
-        {/* <Incentives/>
-        <Features/>
+        <Incentives/>
+        {/* <Features/>
         <Trabajos/> 
         <Achievements/>     
         <CTA/> */}

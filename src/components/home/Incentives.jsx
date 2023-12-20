@@ -1,5 +1,5 @@
 import React from 'react'
-import logt from '../../assets/PRINCIPAL/ICONS/LOGO-AZUL-CLARO.png';
+import logt from '../../assets/PRINCIPAL/icones/gato.png';
 import idv from '../../assets/img/portfolio/ICONS/IDV.png';
 import imp from '../../assets/img/portfolio/ICONS/IMP.png';
 import wb from '../../assets/img/portfolio/ICONS/WB.png';
@@ -9,12 +9,12 @@ import smb from '../../assets/img/portfolio/ICONS/SM.png';
 const posts_design  = [
   {
     _id:3001,
-    title: 'LOGO TIPO',
+    title: 'Desenvolvimento de Conjuntos de Dados',
     img:logt,
     href: '#',
     category: { name: 'Article', href: '#' },
-    minidescription: 'É essencial que as empresas apresentem uma marca forte',
-    description:'É essencial que as empresas apresentem uma marca forte e com personalidade, vindo a ser reconhecidas no mercado, afinal marcas vencedoras não apresentam somente benefícios funcionais, mas também emocionais.',
+    minidescription: 'As anotações de frames desempenham ',
+    description:'As anotações de frames desempenham um papel crucial no treinamento de modelos em tarefas de visão computacional, especialmente em problemas de detecção de objetos, segmentação e outras aplicações relacionadas.',
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     imageUrl:
@@ -29,12 +29,12 @@ const posts_design  = [
   },
   {
     _id:3002,
-    title: 'IDENTIDADE VISUAL',
+    title: 'Desenvolvimento de Algoritmos',
     href: '#',
     img: idv,
     category: { name: 'Video', href: '#' },
     minidescription: 'A  idealização da identidade visual de uma empresa,',
-    description:'A  idealização da identidade visual de uma empresa, está intrinsicamente atrelada aos valores  e ao público que ela almeja , ou seja,  nela está o ponto de partida de todas as informações, valores e personalidade.',
+    description:'Criação de algoritmos personalizados para tarefas específicas, como detecção de objetos, reconhecimento facial, rastreamento de movimento, segmentação de imagem, entre outras.',
     date: 'Mar 10, 2020',
     datetime: '2020-03-10',
     imageUrl:
@@ -49,12 +49,12 @@ const posts_design  = [
   },
   {
     _id:3003,
-    title: 'IMPRESSOS',
+    title: 'Desenvolvimento de Aplicações de Visão Computacional',
     href: '#',
     img: imp,
     category: { name: 'Case Study', href: '#' },
     minidescription:'Ainda hoje, os impressos são o material gráfico de propaganda mais utilizado ',
-    description:'Ainda hoje, os impressos são o material gráfico de propaganda mais utilizado para mostrar o seu negócio aos seus clientes. Para maior comodidade.',
+    description:'Criação de aplicações práticas, como sistemas de vigilância inteligente, reconhecimento automático de placas de veículos, controle de qualidade em linhas de produção, entre outros.',
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
     imageUrl:
@@ -69,12 +69,12 @@ const posts_design  = [
   },
   {
     _id:3004,
-    title: 'EMBALAGEM',
+    title: 'Consultoria em Visão Computacional:',
     href: '#',
     img: smb,
     category: { name: 'Case Study', href: '#' },
     minidescription:'O bom design de embalagem pode garantir uma ótima comunicação com o consumidor',
-    description:'O bom design de embalagem pode garantir uma ótima comunicação com o consumidor informando sobre o produto e seu caráter. É considerada uma poderosa ferramenta de marketing.',
+    description:'Fornecimento de consultoria especializada para entender os requisitos do cliente, propor soluções adequadas e orientar estratégias de implementação.',
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
     imageUrl:
@@ -89,12 +89,12 @@ const posts_design  = [
   },
   {
     _id:3005,
-    title: 'WEB DESIGN',
+    title: 'Soluções para Indústrias Específicas',
     href: '#',
     img: wb,
     category: { name: 'Case Study', href: '#' },
     minidescription:'A internet tem papel determinante no planejamento de comunicação para expandir',
-    description:'A internet tem papel determinante no planejamento de comunicação para expandir sua presença no mercado. Como mídia ou ponto-de-venda, é o meio mais ágil e direto para alcançar o público-alvo.',
+    description:'Desenvolvimento de soluções específicas para setores como saúde, agricultura, manufatura, varejo, segurança, entre outros, para atender a desafios particulares de cada setor.',
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
     imageUrl:
@@ -109,12 +109,12 @@ const posts_design  = [
   },
   {
     _id:3006,
-    title: 'VETORIZAÇÃO',
+    title: 'Processamento de Imagens',
     href: '#',
     img: vec,
     category: { name: 'Case Study', href: '#' },
     minidescription:'Criação de artes e trabalhos com a qualidade exigida ',
-    description:'Criação de artes e trabalhos com a qualidade exigida  no mercado atual ou até mesmo uma remodelação de um trabalho mal produzido.',
+    description:'Aplicação de técnicas avançadas de processamento de imagens para melhorar a qualidade, corrigir distorções e otimizar as imagens para tarefas específicas.',
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
     imageUrl:
@@ -135,18 +135,18 @@ function Incentives() {
       <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
         <div className="max-w-3xl">
           <span className="text-4xl font-bold text-azulforte ">
-            We built our business on customer service
+            Serviços para atender a demanda da sua empresa
           </span>
 
         </div>
         <div className="mt-16  grid grid-cols-1 gap-y-16 gap-x-16 lg:grid-cols-3   ">
           {posts_design.map((posts_design) => (
-            <div key={posts_design._id} className="sm:flex lg:block   shadow-lg rounded-lg shadow-gray-500">
+            <div key={posts_design._id} className="sm:flex lg:block   shadow-2xl rounded-lg  shadow-anaconda">
               <div className="flex-shrink-0 ">
-                <img className=" h-20 w-20 lg:ml-28 lg:mt-8 mt-8 ml-8 animate-bounce" src={posts_design.img} alt="" />
+                <img className=" lg:h-60 lg:w-60 md:w-4 md:h-4 sm:w-11 sm:h-11  lg:ml-14 lg:mt-8 mt-8 ml-4 sm:ml-0 " src={posts_design.img} alt="" />
               </div>
               <div className="lg:pt-2 lg:pl-24 lg:pr-6 lg:mb-6  ml-0 mb-6 pt-4 pr-8">
-                <h3 className="lg:-ml-20 ml-6 sm:pt-6  text-lg font-medium   text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra">{posts_design.title}</h3>
+                <h3 className="lg:-ml-20 ml-6 sm:pt-6  text-lg font-medium   text-transparent bg-clip-text bg-gradient-to-r from-rojoneon via-anaconda to-anaconda">{posts_design.title}</h3>
                 <p className="mt-2 text-sm text-justify text-black lg:-ml-20 sm:-ml-20 ml-6 sm:pt-10">{posts_design.description}</p>
               </div>
             </div>
