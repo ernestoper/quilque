@@ -130,7 +130,7 @@ const posts_design  = [
 ]
 function Incentives() {
   return (
-    <div className="  bg-purple-50">
+    <div className="  bg-white">
     <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
       <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
         <div className="max-w-3xl">
@@ -146,8 +146,8 @@ function Incentives() {
                 <img className=" lg:h-60 lg:w-60 sm:w-64 sm:h-64  lg:ml-14 lg:mt-8 mt-8 ml-4 sm:ml-12 " src={posts_design.img} alt="" />
               </div>
               <div className="lg:pt-2 lg:pl-20 ">
-                <h3 className="lg:-ml-8  lg:pt-4 sm:pt-80 sm:-ml-72 text-lg font-medium sm:pr-4 sm:pl-2  text-transparent bg-clip-text bg-gradient-to-r from-rojoneon via-anaconda to-anaconda">{posts_design.title}</h3>
-                <p className="text-sm text-justify text-black lg:-ml-20  lg:-mr-24 lg:pt-4 sm:pt-6 sm:-ml-80 sm:pl-10 sm:pr-4 sm:pb-4 ">{posts_design.description}</p>
+                <h3 className="lg:-ml-0  lg:pt-4 sm:pt-80 sm:-ml-72 text-lg font-medium sm:pr-4 sm:pl-2  text-transparent bg-clip-text bg-gradient-to-r from-rojoneon via-anaconda to-anaconda">{posts_design.title}</h3>
+                <p className="text-sm text-justify text-black lg:-ml-20  lg:-mr-24 lg:pr-32 lg:pt-4 sm:pt-6 sm:-ml-80 sm:pl-10 sm:pr-4 sm:pb-4 ">{posts_design.description}</p>
               </div>
             </div>
           ))}
