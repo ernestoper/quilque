@@ -143,11 +143,11 @@ function Incentives() {
           {posts_design.map((posts_design) => (
             <div key={posts_design._id} className="sm:flex lg:block   shadow-2xl rounded-lg  shadow-anaconda">
               <div className="flex-shrink-0 ">
-                <img className=" lg:h-60 lg:w-60 md:w-4 md:h-4 sm:w-11 sm:h-11  lg:ml-14 lg:mt-8 mt-8 ml-4 sm:ml-0 " src={posts_design.img} alt="" />
+                <img className=" lg:h-60 lg:w-60 sm:w-64 sm:h-64  lg:ml-14 lg:mt-8 mt-8 ml-4 sm:ml-12 " src={posts_design.img} alt="" />
               </div>
-              <div className="lg:pt-2 lg:pl-24 lg:pr-6 lg:mb-6  ml-0 mb-6 pt-4 pr-8">
-                <h3 className="lg:-ml-20 ml-6 sm:pt-6  text-lg font-medium   text-transparent bg-clip-text bg-gradient-to-r from-rojoneon via-anaconda to-anaconda">{posts_design.title}</h3>
-                <p className="mt-2 text-sm text-justify text-black lg:-ml-20 sm:-ml-20 ml-6 sm:pt-10">{posts_design.description}</p>
+              <div className="lg:pt-2 lg:pl-20 ">
+                <h3 className="lg:-ml-8  lg:pt-4 sm:pt-80 sm:-ml-72 text-lg font-medium sm:pr-4 sm:pl-2  text-transparent bg-clip-text bg-gradient-to-r from-rojoneon via-anaconda to-anaconda">{posts_design.title}</h3>
+                <p className="text-sm text-justify text-black lg:-ml-20  lg:-mr-24 lg:pt-4 sm:pt-6 sm:-ml-80 sm:pl-10 sm:pr-4 sm:pb-4 ">{posts_design.description}</p>
               </div>
             </div>
           ))}
