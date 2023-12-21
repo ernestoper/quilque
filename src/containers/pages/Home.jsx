@@ -8,6 +8,7 @@ import UseCases from '../../components/home/UseCases'
 import Footer from '../../components/navigation/Footer'
 import Navbar from '../../components/navigation/Navbar'
 import { useEffect } from "react"
+import Sskills from "../../components/home/sskills";
 import Cases from '../../components/home/Cases'
 import Listatestimonios from '../../components/home/Listatestimonios'
 import Carrousel from '../../components/home/Carrousel'
@@ -23,7 +24,9 @@ function Home() {
       <Navbar/>
       <div  className='overflow-hidden'>
         <Header/>
-        <Incentives/>
+        {/* <Incentives/> */}
+        <Sskills/>
+        
         {/* <Features/>
         <Trabajos/> 
         <Achievements/>     

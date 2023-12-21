@@ -136,11 +136,11 @@ function Header(){
 
  <div className="bg-black relative pt-12 pb-20 lg:pt-20  ">
 
-      <motion.span
+      {/* <motion.span
                 ref={ref}
                 animate={{ x, y }}
                 className="hidden lg:block sec-1-bg-gradient-1-desktop md:w-[10px] 2xl:w-[140px] md:h-[10px] 2xl:h-[10px] absolute md:left-[10px] 2xl:left-[19px] -top-[79px]"
-      />
+      /> */}
 
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
 
