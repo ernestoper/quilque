@@ -5,7 +5,7 @@ import imp from '../../assets/img/portfolio/ICONS/IMP.png';
 import wb from '../../assets/img/portfolio/ICONS/WB.png';
 import vec from '../../assets/img/portfolio/ICONS/VEC.png';
 import smb from '../../assets/img/portfolio/ICONS/SM.png';
-
+import { motion } from "framer-motion";
 const posts_design  = [
   {
     _id:3001,
@@ -139,17 +139,31 @@ function Incentives() {
           </span>
 
         </div>
-        <div className="mt-16  grid grid-cols-1 gap-y-16 gap-x-16 lg:grid-cols-3   ">
+        <div className="mt-16  grid grid-cols-1 gap-y-16 gap-x-16 lg:grid-cols-3   "
+>
           {posts_design.map((posts_design) => (
-            <div key={posts_design._id} className="sm:flex lg:block   shadow-2xl rounded-lg  shadow-anaconda">
-              <div className="flex-shrink-0 ">
+            <motion.div key={posts_design._id} className="sm:flex lg:block   shadow-2xl rounded-lg  shadow-anaconda"                    
+            initial={{ opacity: 0 }}
+            //animate={{ y: 0, opacity: 1 }}
+            whileInView={{x: [-200, 0], opacity: 1}}
+            transition={{ duration: 0.7, delay: 0.25 }}>
+              <motion.div className="flex-shrink-0 "initial={{ opacity: 0 }}
+                    //animate={{ y: 0, opacity: 1 }}
+                    whileInView={{x: [100, 0], opacity: 1}}
+                    transition={{ duration: 0.7, delay: 0.25 }}>
                 <img className=" lg:h-60 lg:w-60 sm:w-64 sm:h-64  lg:ml-14 lg:mt-8 mt-8 ml-4 sm:ml-12 " src={posts_design.img} alt="" />
-              </div>
+              </motion.div>
               <div className="lg:pt-2 lg:pl-20 ">
                 <h3 className="lg:-ml-0  lg:pt-4 sm:pt-80 sm:-ml-72 text-lg font-medium sm:pr-4 sm:pl-2  text-transparent bg-clip-text bg-gradient-to-r from-rojoneon via-anaconda to-anaconda">{posts_design.title}</h3>
-                <p className="text-sm text-justify text-black lg:-ml-20  lg:-mr-24 lg:pr-32 lg:pt-4 sm:pt-6 sm:-ml-80 sm:pl-10 sm:pr-4 sm:pb-4 ">{posts_design.description}</p>
+                <motion.p className="text-sm text-justify text-black lg:-ml-20  lg:-mr-24 lg:pr-32 lg:pt-4 sm:pt-6 sm:-ml-80 sm:pl-10 sm:pr-4 sm:pb-4 "
+                  initial={{ opacity: 0 }}
+                  //animate={{ y: 0, opacity: 1 }}
+                  whileInView={{y: [200, 0], opacity: 1}}
+                  transition={{ duration: 0.7, delay: 0.25 }}>
+                    {posts_design.description}
+                </motion.p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
