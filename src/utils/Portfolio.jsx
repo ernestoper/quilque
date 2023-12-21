@@ -59,11 +59,11 @@ const Portfolio = () => {
                             className="flex flex-col gap-4 cursor-pointer"
                         >
                             <div className="bg-black rounded-[20px] aspect-auto overflow-hidden ">
-                                {/* <img
+                                <img
                                     src={item.image}
                                     className="transition-transform hover:-translate-y-[25%] hover:duration-2500 ease-linear"
-                                /> */}
-                                <ReactPlayer url={item.image} />
+                                />
+                                {/* <ReactPlayer url={item.image} /> */}
           
                             </div>
                             <div className="text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center">

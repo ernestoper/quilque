@@ -4,6 +4,7 @@ import p3 from "./assets-test/project-3.png";
 import p4 from "./assets-test/project-4.png";
 import p5 from "./assets-test/project-5.png";
 import p6 from "./assets-test/project-6.png";
+import sucu from "./assets/PRINCIPAL/porta/sucu.jpeg";
 
 export const filters = [
     {
@@ -27,7 +28,7 @@ export const filters = [
 export const projects = [
     {
         name: "Join the Innovative Car Wash Service",
-        image: 'https://youtu.be/xm9KyGCumCc',
+        image: sucu,
         tags: ["dashboard", "mobile-app"],
     },
     {

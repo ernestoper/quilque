@@ -50,47 +50,37 @@ const Sskills = () => {
             <div className="sec-3-bg-gradient-2" />
             {/*BACKGROUND ELEMENTS END*/}
             <Wrapper> 
-            {/* SKILL ICONS START */}
-            <div className="grid grid-cols-5 gap-3 md:grid-cols-10 relative">
-                    <SkillIcon path={sk1} width="120" height="160"/>
-                    <SkillIcon path={sk2} />
-                    <SkillIcon path={sk3} />
-                    <SkillIcon path={sk4} />
-                    <SkillIcon path={sk5} />
-                    <SkillIcon path={sk6} />
-                    <SkillIcon path={sk7} />
-                    <SkillIcon path={sk8} />
-                    <SkillIcon path={sk9} />
-                    <SkillIcon path={sk10} />
 
-
-            </div>
-
-            <div className="grid grid-cols-5 gap-4 md:grid-cols-10 relative mt-6">
-                    <SkillIcon path={sk15} />
-                    <SkillIcon path={sk11} />
-                    <SkillIcon path={sk13} />
-                    <SkillIcon path={sk12} />
-                    <SkillIcon path={sk14} />
-                    <SkillIcon path={sk16} />
-                    <SkillIcon path={sk18} />
-                    <SkillIcon path={sk17} />
-
-                    
-                    <SkillIcon path={sk19} />
-                    <SkillIcon path={sk20} />
-
-
-            </div>
-            {/* SKILL ICONS END */}
 
             {/* SERVICES SECTION START */}
             
 
-            
+
             <div className="flex  justify-between  py-[50px] md:py-[100px] relative  ">
-                    {/* SERVICES START */}
-                    <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10  ">
+
+
+            {/* SECTION HEADING START */}
+            <div className=" flex  justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
+                        <span>Solving</span>
+                        <span>Problems</span>
+                        <span className="flex items-center gap-2">
+                            Through
+                            <img
+                                src={pattern}
+                                className="block md:hidden w-[80px] mt-1"
+                            />
+                        </span>
+                        <span className="flex items-center gap-4">
+                            Good{" "}
+                            <img
+                                src={pattern}
+                                className="hidden md:block md:w-[140px] 2xl:w-[190px] mt-3"
+                            />
+                        </span>
+                        <span>Services</span>
+            </div>
+            {/* SERVICES START */}
+            <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10  ">
                         <Service
                             //num="1"
                             title="Computer Vision Solutions"
@@ -141,30 +131,9 @@ const Sskills = () => {
                         />
                     </div>
                     {/* SERVICES END */}
-
-            {/* SECTION HEADING START */}
-            <div className=" flex  justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
-                        <span>Solving</span>
-                        <span>Problems</span>
-                        <span className="flex items-center gap-2">
-                            Through
-                            <img
-                                src={pattern}
-                                className="block md:hidden w-[80px] mt-1"
-                            />
-                        </span>
-                        <span className="flex items-center gap-4">
-                            Good{" "}
-                            <img
-                                src={pattern}
-                                className="hidden md:block md:w-[140px] 2xl:w-[190px] mt-3"
-                            />
-                        </span>
-                        <span>Services</span>
-            </div>
             {/* SECTION HEADING END */}
                         {/* SECTION HEADING START */}
-                        <div className=" flex  justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
+                        {/* <div className=" flex  justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
                         <span>Solving</span>
                         <span>Problems</span>
                         <span className="flex items-center gap-2">
@@ -182,14 +151,46 @@ const Sskills = () => {
                             />
                         </span>
                         <span>Services</span>
-            </div>
+            </div> */}
             {/* SECTION HEADING END */}
             </div>
+            {/* SKILL ICONS START */}
+            <div className="grid grid-cols-5 gap-3 md:grid-cols-10 relative">
+                    <SkillIcon path={sk1} width="120" height="160"/>
+                    <SkillIcon path={sk2} />
+                    <SkillIcon path={sk3} />
+                    <SkillIcon path={sk4} />
+                    <SkillIcon path={sk5} />
+                    <SkillIcon path={sk6} />
+                    <SkillIcon path={sk7} />
+                    <SkillIcon path={sk8} />
+                    <SkillIcon path={sk9} />
+                    <SkillIcon path={sk10} />
 
+
+            </div>
+
+            <div className="grid grid-cols-5 gap-4 md:grid-cols-10 relative mt-6">
+                    <SkillIcon path={sk15} />
+                    <SkillIcon path={sk11} />
+                    <SkillIcon path={sk13} />
+                    <SkillIcon path={sk12} />
+                    <SkillIcon path={sk14} />
+                    <SkillIcon path={sk16} />
+                    <SkillIcon path={sk18} />
+                    <SkillIcon path={sk17} />
+
+                    
+                    <SkillIcon path={sk19} />
+                    <SkillIcon path={sk20} />
+
+
+            </div>
+            {/* SKILL ICONS END */}
             {/* SERVICES SECTION END */}
-            
-                <Portfolio />
-                <Achievements />
+            <Achievements />
+            <Portfolio />
+
             </Wrapper> 
         </div>
     );
