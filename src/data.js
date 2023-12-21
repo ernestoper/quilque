@@ -27,7 +27,7 @@ export const filters = [
 export const projects = [
     {
         name: "Join the Innovative Car Wash Service",
-        image: p1,
+        image: 'https://youtu.be/xm9KyGCumCc',
         tags: ["dashboard", "mobile-app"],
     },
     {

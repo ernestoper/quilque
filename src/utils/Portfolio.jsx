@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ReactPlayer from 'react-player'
 import { projects, filters } from "../data";
 import Div from "./Div";
 
@@ -54,20 +54,22 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {projectData.map((item, index) => {
                     return (
-                        <Div
+                        <div
                             key={index}
                             className="flex flex-col gap-4 cursor-pointer"
                         >
-                            <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
-                                <img
+                            <div className="bg-black rounded-[20px] aspect-auto overflow-hidden ">
+                                {/* <img
                                     src={item.image}
                                     className="transition-transform hover:-translate-y-[25%] hover:duration-2500 ease-linear"
-                                />
+                                /> */}
+                                <ReactPlayer url={item.image} />
+          
                             </div>
                             <div className="text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center">
                                 {item.name}
                             </div>
-                        </Div>
+                        </div>
                     );
                 })}
             </div>

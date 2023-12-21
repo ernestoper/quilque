@@ -27,7 +27,7 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="lg:w-full lg:h-18 h-14 flex pr-5 top-0 z-50 bg-pretoneon sticky justify-between items-center font-lg shadow-md  shadow-verdeneon">
+    <div className="lg:w-full lg:h-18 h-14 flex pr-5 top-0 z-50 bg-pretoneon sticky justify-between items-center font-lg ">
       <div className='lg:ml-12 ml-4 '>
         <img src={logo} alt="logo" className='lg:h-12 lg:w-44 h-12 w-18' />
       </div>
