@@ -43,13 +43,13 @@ const Sskills = () => {
     return (
         <div
             id="skills"
-            className="bg-anaconda py-[50px] md:py-[100px] relative overflow-hidden lg:-mt-0"
+            className="bg-anaconda py-[50px] md:py-[100px] relative overflow-hidden lg:-mt-0 lg:grid-cols-2  xs:grid-cols-1 "
         >
             {/* BACKGROUND ELEMENTS START */}
-            <div className="sec-3-bg-gradient-1" />
-            <div className="sec-3-bg-gradient-2" />
+            {/* <div className="sec-3-bg-gradient-1" />
+            <div className="sec-3-bg-gradient-2" /> */}
             {/*BACKGROUND ELEMENTS END*/}
-            <Wrapper> 
+            <div className="max-w-[1680px] px-5 md:px-10 mx-auto pt-[1px] mt-[-1px]"> 
 
 
             {/* SERVICES SECTION START */}
@@ -60,24 +60,9 @@ const Sskills = () => {
 
 
             {/* SECTION HEADING START */}
-            <div className=" flex lg:-mt-96 justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
-                        <span>Solving</span>
-                        <span>Problems</span>
-                        <span className="flex items-center gap-2">
-                            Through
-                            <img
-                                src={pattern}
-                                className="block md:hidden w-[80px] mt-1"
-                            />
-                        </span>
-                        <span className="flex items-center gap-4">
-                            Good{" "}
-                            {/* <img
-                                src={pattern}
-                                className="hidden md:block md:w-[140px] 2xl:w-[190px] mt-3"
-                            />  */}
-                        </span>
-                        <span>Services e mais coisa que voce image</span>
+            <div className=" flex lg:-mt-66  gap-2 text-[40px] md:text-[90px] xs:text-[36px] 2xl:text-[120px]  font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
+                        <span className="mx-auto">Solving Problems Through Good Services e mais coisa que voce image</span>
+
             </div>
             {/* SERVICES START */}
             <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10  ">
@@ -191,7 +176,7 @@ const Sskills = () => {
             <Achievements />
             <Portfolio />
 
-            </Wrapper> 
+            </div> 
         </div>
     );
 };
