@@ -43,7 +43,7 @@ const Sskills = () => {
     return (
         <div
             id="skills"
-            className="bg-azuldio py-[50px] md:py-[100px] relative overflow-hidden m-auto"
+            className="bg-anaconda py-[50px] md:py-[100px] relative overflow-hidden lg:-mt-0"
         >
             {/* BACKGROUND ELEMENTS START */}
             <div className="sec-3-bg-gradient-1" />
@@ -60,7 +60,7 @@ const Sskills = () => {
 
 
             {/* SECTION HEADING START */}
-            <div className=" flex  justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
+            <div className=" flex lg:-mt-96 justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
                         <span>Solving</span>
                         <span>Problems</span>
                         <span className="flex items-center gap-2">
@@ -72,12 +72,12 @@ const Sskills = () => {
                         </span>
                         <span className="flex items-center gap-4">
                             Good{" "}
-                            <img
+                            {/* <img
                                 src={pattern}
                                 className="hidden md:block md:w-[140px] 2xl:w-[190px] mt-3"
-                            />
+                            />  */}
                         </span>
-                        <span>Services</span>
+                        <span>Services e mais coisa que voce image</span>
             </div>
             {/* SERVICES START */}
             <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10  ">
