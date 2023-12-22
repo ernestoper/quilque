@@ -256,7 +256,7 @@ function Header(){
                 //animate={{ x: 0, opacity: 1 }}
                 whileInView={{x: [200, 0], opacity: 1}}
                 transition={{ duration: 0.7, delay: 0.35 }}>
-                    <div aria-hidden="true" className="absolute lg:scale-100 lgl:scale-120 scale-50 mdl:scale-75 inset-0 lg:ml-80 sm:ml-8 xs:ml-6 md:ml-48 w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-anaconda to-verdeneon blur-2xl"></div>
+                    <div aria-hidden="true" className="absolute lg:scale-100 lg:mt-24 lgl:scale-120 scale-50 mdl:scale-75 inset-0 lg:ml-80 sm:ml-8 xs:ml-6 md:ml-48 w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-anaconda to-verdeneon blur-2xl"></div>
                     <img src={home01} className=
                     "lg:mt-0 lg:ml-60 md:ml-44 ml-12 relative w-9/12 md:w-8/12 lg:w-8/12 sm:w-10/12 sm:ml-12" alt="wath illustration" loading="lazy"/>
                 </motion.div>
