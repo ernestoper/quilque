@@ -172,17 +172,27 @@ function Header(){
         <div className="lg:flex">
             <div className=" relative -pr-32 lg:pr-32 mdl:mt-10 md:mt-10 sm:mt-10 mt-2 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
 
-              <motion.div className=" flex-[0.75] flex justify-center flex-col  mx-auto w-10/12 md:w-5/6 font-black text-azulciano lg:text-7xl text-center text-5xl lg:w-auto lg:text-left xl:text-7xl "
-                    initial={{opacity:0}}
-                    //show={{x:0, y:0, opacity:1, transition:{type:'tween', delay:0.2, duration:1, ease: 'easeOut',}}}
-                    //animate={{ y: 0, opacity: 1 }}
-                    transition={{ type:'tween',delay:0.2, duration: 1.5,ease: 'easeOut' }}
-                    whileInView={{y: [-100, 0], opacity: 1}}  
+              <div className=" flex-[0.75] flex justify-center flex-col  mx-auto w-10/12 md:w-5/6 font-black text-azulciano lg:text-7xl text-center text-5xl lg:w-auto lg:text-left xl:text-7xl "
+
                     //variants={fadeIn('left', 'tween', 0.2, 1)}
                   >
-                    Olá, sou Ernesto Computer Vision
+                    <motion.span className="relative text-transparent bg-clip-text bg-gradient-to-r from-roxosombra via-carmesina to-anaconda  "
+                      initial={{opacity:0}}
+                      //show={{x:0, y:0, opacity:1, transition:{type:'tween', delay:0.2, duration:1, ease: 'easeOut',}}}
+                      //animate={{ y: 0, opacity: 1 }}
+                      transition={{ type:'tween',delay:0.2, duration: 1.5,ease: 'easeOut' }}
+                      whileInView={{y: [-100, 0], opacity: 1}}  
+                    >Olá, sou Ernesto</motion.span>
+                    <motion.span className="mt-30 relative text-transparent bg-clip-text bg-gradient-to-r from-anaconda via-roxosombra to-carmesina  "
+                      initial={{opacity:0}}
+                      //show={{x:0, y:0, opacity:1, transition:{type:'tween', delay:0.2, duration:1, ease: 'easeOut',}}}
+                      //animate={{ y: 0, opacity: 1 }}
+                      transition={{ type:'tween',delay:0.2, duration: 1.5,ease: 'easeOut' }}
+                      whileInView={{x: [-100, 0], opacity: 1}}  
+                    
+                    >Computer Vision</motion.span>
                     <br className="lg:block hidden"/> 
-                    <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-roxosombra to-roxosombra  ">
+                    <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-anaconda to-verdeneon  ">
                       
                       <Typewriter
                                   words={[' Engineer']}
@@ -199,7 +209,7 @@ function Header(){
                     
                     </span>
 
-              </motion.div>
+              </div>
                 
                 
               <motion.div  className=""
@@ -208,7 +218,7 @@ function Header(){
                     whileInView={{y: [-200, 0], opacity: 1}}
                     transition={{ duration: 0.7, delay: 0.25 }}
               >
-                      <h1 className='xs:mx-4 sm:text-lg sm:-mx-4 md:-mx-20  text-white text-3xl md:text-xl xs:text-lg text-justify lg:w-11/12'>
+                      <h1 className='xs:mx-4 sm:text-lg sm:-mx-4 md:-mx-20 lg:-ml-8 lg:px-10 text-white text-3xl md:text-xl xs:text-lg text-justify lg:w-11/12'>
                       Entusiasta em desvendar os desafios visuais do mundo digital e oferecer
                        soluções inovadoras para setores como a indústria, agricultura, entre outros.
                        Com uma ampla bagagem de experiência ao longo dos anos, minha trajetória é 
