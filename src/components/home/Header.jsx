@@ -1,7 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter'
 //import { Link } from 'react-router-dom'
 //import home from '../../assets/PRINCIPAL/TELA-HOME/home-sem.png';
-import home01 from '../../assets/PRINCIPAL/home/02.png';
+import home01 from '../../assets/PRINCIPAL/home/eu.png';
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useFollowPointer } from "./useFollowPointer";
