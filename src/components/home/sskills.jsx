@@ -53,12 +53,12 @@ const Sskills = () => {
                                         whileInView={{x: [100, 0], opacity: 1}}
                                         transition={{ duration: 0.7, delay: 0.25 }}
                                         >
-                        <span className=" uppercase font-sans tracking-wider lg:text-2xl text-1xl text-white ">
+                        <span className=" uppercase font-sans tracking-wider lg:text-3lg text-1xl text-white ">
                         Detecção de Objetos
                         </span>
                         <div className="lg:px-4  lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 px-12 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_130%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
-                            <span className="lg:text-2xl text-1xl  uppercase font-light tracking-wider text-white">Detecção de Objetos</span>
+                            <span className="lg:text-3lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Objetos</span>
 
                         </div>
                     </motion.div>
@@ -69,16 +69,16 @@ const Sskills = () => {
                      whileInView={{x: [-200, 0], opacity: 1}}
                      transition={{ duration: 0.7, delay: 0.25 }}
                      >
-                        <span className="uppercase font-sans tracking-wider lg:text-1.5xl text-1xl">
-                        Segmentação de Imagem
-                        </span>
+                        <div className="uppercase font-sans tracking-wider lg:text-md text-lg">
+                        Dataset
+                        </div>
                         {/* <span className="uppercase font-sans tracking-wider lg:text-2xl text-1xl">
                         de Imagem
                         </span> */}
-                        <div className="lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+                        <div className="lg:px-4 px-0 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
-                            <span className=" lg:text-1xl  text-1xl uppercase font-light tracking-wider text-white ">Segmentação </span>
-                            <span className=" lg:text-2xl  text-1xl uppercase font-light tracking-wider text-white ">de Imagem</span>
+                            <span className=" lg:text-3lg  text-1xl uppercase font-light tracking-wider text-white ">Dataset </span>
+                            <span className=" lg:text-2lg  text-1xl uppercase font-light tracking-wider text-white ">Preparação</span>
 
                         </div>
                     </motion.div>
@@ -89,12 +89,12 @@ const Sskills = () => {
                      whileInView={{y: [-200, 0], opacity: 1}}
                      transition={{ duration: 0.7, delay: 0.25 }}
                      >
-                        <span className="uppercase font-sans tracking-wider lg:text-2xl text-1xl">
+                        <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
                         Detecção de Anomalias
                         </span>
                         <div className="lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
-                            <span className="lg:text-2xl text-1xl  uppercase font-light tracking-wider text-white">Detecção de Anomalias</span>
+                            <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Anomalias</span>
 
                         </div>
                     </motion.div>
@@ -105,12 +105,12 @@ const Sskills = () => {
                     whileInView={{y: [-200, 0], opacity: 1}}
                     transition={{ duration: 0.7, delay: 0.25 }}
                     >
-                        <span className="uppercase font-sans tracking-wider lg:text-2xl text-1xl">
+                        <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
                         Controle de Qualidade Industrial
                         </span>
                         <div className=" lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
-                            <span className="lg:text-2xl text-1xl  uppercase font-light tracking-wider text-white ">Controle de Qualidade Industrial</span>
+                            <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white ">Controle de Qualidade Industrial</span>
 
                         </div>
                     </motion.div>
@@ -119,14 +119,14 @@ const Sskills = () => {
                     
                 </div>
                 <motion.div href="#" draggable="false" aria-labelledby="title" className="text-justify  relative py-6 my-2 lg:px-4 
-                 shadow-lg rounded-lg -mx-0  shadow-rosachocante  group text-white hidden md:block"
+                 shadow-lg rounded-lg -mx-0  shadow-rosachocante  group text-white hidden md:inline-block "
                  initial={{ opacity: 0 }}
                  //animate={{ y: 0, opacity: 1 }}
                  whileInView={{y: [200, 0], opacity: 1}}
                  transition={{ duration: 0.7, delay: 0.25 }}
                  >
 
-                <span id="title" className="text-white lg:text-2xl text-3xl uppercase font-light tracking-wider  ">A visão computacional na indústria oferece benefícios substanciais. Desde a otimização de processos de produção até a análise preditiva de falhas de equipamentos, a visão computacional com redes neurais convolucionais está redefinindo a forma como as organizações interpretam dados visuais para embasar decisões estratégicas.</span>
+                <div id="title" className="text-white lg:text-2xl text-3xl uppercase font-light tracking-wider  ">A visão computacional na indústria oferece benefícios substanciais. Desde a otimização de processos de produção até a análise preditiva de falhas de equipamentos, a visão computacional com redes neurais convolucionais está redefinindo a forma como as organizações interpretam dados visuais para embasar decisões estratégicas.</div>
 
                 <div className="rounded-lg absolute inset-0 py-6 px-4 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
@@ -136,15 +136,15 @@ const Sskills = () => {
 
                 </motion.div>
             </div>
-            <motion.div className="flex  justify-center mb-4  "
+            <motion.div className="flex  justify-center lg:mb-4 mb-4 "
                                 initial={{ opacity: 0 }}
                                 //animate={{ y: 0, opacity: 1 }}
                                 whileInView={{x: [200, 0], opacity: 1}}
                                 transition={{ duration: 0.7, delay: 0.25 }}
             >
-                <h2 href="#" draggable="false" aria-labelledby="title" className="relative py-6  group text-white lg:px-12 px-28 ">
+                <div href="#" draggable="false" aria-labelledby="title" className="relative py-6  group text-white  md:mx-12 xs:mx-2 itens-center text-left ">
 
-                <div id="title" className=" lg:text-7xl text-4xl uppercase font-light tracking-wider   font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent bg-clip-text">Soluções de Visão Computacional Personalizadas para a sua Empresa</div>
+                <div className="lg:mt-10 lg:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:ml-8 xs:mr-8 uppercase  tracking-wider   font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent bg-clip-text">Soluções de Visão Computacional Personalizadas para  sua Empresa</div>
 
                 {/* <div className="absolute inset-0 py-6 px-12 bg-indigo-600 text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)] text-justify " aria-hidden="true">
 
@@ -152,7 +152,7 @@ const Sskills = () => {
 
                 </div> */}
 
-                </h2>
+                </div>
             </motion.div>
 
             {/* <Service
