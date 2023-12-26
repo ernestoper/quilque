@@ -258,10 +258,224 @@ const Sskills = () => {
     
             </div>
 
+         
+           <div className="bg-black lg:grid-rows-8 grid-flow-col px-12 mb-4">
+           
+                <div className="grid  lg:gap-[8px] lg:grid-cols-4 gap-2 grid-cols-2 ">
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className=" relative py-6 bg-gradient-to-r 
+                                        from-rosachocante via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group lg:px-4 px-2"
+                                        initial={{ opacity: 0 }}
+                                        //animate={{ y: 0, opacity: 1 }}
+                                        whileInView={{x: [100, 0], opacity: 1}}
+                                        transition={{ duration: 0.7, delay: 0.25 }}
+                                        >
+                        <span className=" uppercase font-sans tracking-wider lg:text-3lg text-1xl text-white ">
+                        Dados de Treinamento
+                        </span>
+                        <div className="lg:px-4  lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 px-12 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_130%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
+                            <span className="lg:text-3lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Objetos</span>
+
+                        </div>
+                    </motion.div>
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r from-rosachocante
+                     via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group  lg:px-2 px-0"
+                     initial={{ opacity: 0 }}
+                     //animate={{ y: 0, opacity: 1 }}
+                     whileInView={{x: [-200, 0], opacity: 1}}
+                     transition={{ duration: 0.7, delay: 0.25 }}
+                     >
+                        <div className="uppercase font-sans tracking-wider lg:text-md text-lg">
+                        Arquitetura do Modelo
+                        </div>
+
+                        <div className="lg:px-4 px-0 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                            <span className=" lg:text-3lg  text-1xl uppercase font-light tracking-wider text-white ">Dataset </span>
+                            <span className=" lg:text-2lg  text-1xl uppercase font-light tracking-wider text-white ">Preparação</span>
+
+                        </div>
+                    </motion.div>
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r
+                     from-rosachocante via-rojoneon to-anaconda  lg:rounded-tl-lg rounded-lg group  lg:px-4 px-2"
+                     initial={{ opacity: 0 }}
+                     //animate={{ y: 0, opacity: 1 }}
+                     whileInView={{y: [-200, 0], opacity: 1}}
+                     transition={{ duration: 0.7, delay: 0.25 }}
+                     >
+                        <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
+                        Transfer Learning
+                        </span>
+                        <div className="lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                            <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Anomalias</span>
+
+                        </div>
+                    </motion.div>
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r 
+                    from-rosachocante via-rojoneon to-anaconda  lg:rounded-tl-lg rounded-lg group rounded-tr-lg lg:px-4 px-2"
+                    initial={{ opacity: 0 }}
+                    //animate={{ y: 0, opacity: 1 }}
+                    whileInView={{y: [-200, 0], opacity: 1}}
+                    transition={{ duration: 0.7, delay: 0.25 }}
+                    >
+                        <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
+                        Atualização Periódica
+                        </span>
+                        <div className=" lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                            <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white ">Controle de Qualidade Industrial</span>
+
+                        </div>
+                    </motion.div>
                 
+                    
+                    
+                </div>
+                <motion.div href="#" draggable="false" aria-labelledby="title" className="text-justify  relative py-6 my-2 lg:px-4 
+                 shadow-lg rounded-lg -mx-0  shadow-rosachocante  group text-white hidden md:inline-block "
+                 initial={{ opacity: 0 }}
+                 //animate={{ y: 0, opacity: 1 }}
+                 whileInView={{y: [200, 0], opacity: 1}}
+                 transition={{ duration: 0.7, delay: 0.25 }}
+                 >
 
+                <div id="title" className="text-white lg:text-2xl text-3xl uppercase font-light tracking-wider  ">O treinamento de modelos de visão computacional é uma etapa fundamental no desenvolvimento de sistemas capazes de interpretar e extrair informações de imagens ou vídeos. Esse processo envolve ensinar algoritmos a reconhecer padrões, objetos ou características específicas presentes nos dados visuais.</div>
+
+                <div className="rounded-lg absolute inset-0 py-6 px-4 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                    <span className="lg:text-2xl text-3xl  uppercase font-light tracking-wider rounded-br-lg ">O treinamento de modelos de visão computacional é uma etapa fundamental no desenvolvimento de sistemas capazes de interpretar e extrair informações de imagens ou vídeos. Esse processo envolve ensinar algoritmos a reconhecer padrões, objetos ou características específicas presentes nos dados visuais.</span>
+
+                </div>
+
+                </motion.div>
+ 
+            </div>
+            <div className="flex  justify-center lg:mb-4 mb-0 mt-0 lg:grid-rows-8 grid-flow-col ">
+                <motion.div className="lg:mt-10 lg:text-7xl mdl:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-12 uppercase  tracking-wider   
+                font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
+                bg-clip-text"
+                initial={{ opacity: 0 }}
+                //animate={{ y: 0, opacity: 1 }}
+                whileInView={{x: [200, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                >Treinamento de modelos de Visão Computacional
+                </motion.div>
+    
+            </div>
+
+            <div className="bg-black lg:grid-rows-8 grid-flow-col px-12 mb-4">
+           
+           <div className="grid  lg:gap-[8px] lg:grid-cols-4 gap-2 grid-cols-2 ">
+               <motion.div href="#" draggable="false" aria-labelledby="title" className=" relative py-6 bg-gradient-to-r 
+                                   from-rosachocante via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group lg:px-4 px-2"
+                                   initial={{ opacity: 0 }}
+                                   //animate={{ y: 0, opacity: 1 }}
+                                   whileInView={{x: [100, 0], opacity: 1}}
+                                   transition={{ duration: 0.7, delay: 0.25 }}
+                                   >
+                   <span className=" uppercase font-sans tracking-wider lg:text-3lg text-1xl text-white ">
+                   SITE RESPONSIVO
+                   </span>
+                   <div className="lg:px-4  lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 px-12 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_130%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                       <span className="lg:text-3lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Objetos</span>
+
+                   </div>
+               </motion.div>
+               <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r from-rosachocante
+                via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group  lg:px-2 px-0"
+                initial={{ opacity: 0 }}
+                //animate={{ y: 0, opacity: 1 }}
+                whileInView={{x: [-200, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                >
+                   <div className="uppercase font-sans tracking-wider lg:text-md text-lg">
+                   Site Profissional
+                   </div>
+
+                   <div className="lg:px-4 px-0 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                       <span className=" lg:text-3lg  text-1xl uppercase font-light tracking-wider text-white ">Dataset </span>
+                       <span className=" lg:text-2lg  text-1xl uppercase font-light tracking-wider text-white ">Preparação</span>
+
+                   </div>
+               </motion.div>
+               <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r
+                from-rosachocante via-rojoneon to-anaconda  lg:rounded-tl-lg rounded-lg group  lg:px-4 px-2"
+                initial={{ opacity: 0 }}
+                //animate={{ y: 0, opacity: 1 }}
+                whileInView={{y: [-200, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                >
+                   <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
+                   Landing Pages
+                   </span>
+                   <div className="lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                       <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Anomalias</span>
+
+                   </div>
+               </motion.div>
+               <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r 
+               from-rosachocante via-rojoneon to-anaconda  lg:rounded-tl-lg rounded-lg group rounded-tr-lg lg:px-4 px-2"
+               initial={{ opacity: 0 }}
+               //animate={{ y: 0, opacity: 1 }}
+               whileInView={{y: [-200, 0], opacity: 1}}
+               transition={{ duration: 0.7, delay: 0.25 }}
+               >
+                   <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
+                   Site Moderno
+                   </span>
+                   <div className=" lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                       <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white ">Controle de Qualidade Industrial</span>
+
+                   </div>
+               </motion.div>
+           
+               
+               
+           </div>
+           <motion.div href="#" draggable="false" aria-labelledby="title" className="text-justify  relative py-6 my-2 lg:px-4 
+            shadow-lg rounded-lg -mx-0  shadow-rosachocante  group text-white hidden md:inline-block "
+            initial={{ opacity: 0 }}
+            //animate={{ y: 0, opacity: 1 }}
+            whileInView={{y: [200, 0], opacity: 1}}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            >
+
+           <div id="title" className="text-white lg:text-2xl text-3xl uppercase font-light tracking-wider  ">Se você está pronto para elevar a experiência do usuário do seu projeto ou deseja revitalizar a interface do seu site, estamos prontos para colaborar. Entre em contato conosco para discutir sua visão e iniciar o processo de desenvolvimento de Frontend que transformará sua ideia em realidade.</div>
+
+           <div className="rounded-lg absolute inset-0 py-6 px-4 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+               <span className="lg:text-2xl text-3xl  uppercase font-light tracking-wider rounded-br-lg ">Se você está pronto para elevar a experiência do usuário do seu projeto ou deseja revitalizar a interface do seu site, estamos prontos para colaborar. Entre em contato conosco para discutir sua visão e iniciar o processo de desenvolvimento de Frontend que transformará sua ideia em realidade.</span>
+
+           </div>
+
+           </motion.div>
+
+       </div>
+
+       <div className="flex  justify-center lg:mb-4 mb-0 mt-0 lg:grid-rows-8 grid-flow-col ">
+                <motion.div className="lg:mt-10 lg:text-7xl mdl:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-12 uppercase  tracking-wider   
+                font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
+                bg-clip-text"
+                initial={{ opacity: 0 }}
+                //animate={{ y: 0, opacity: 1 }}
+                whileInView={{x: [200, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                >Tenha um site Moderno e Responsivo em 5 dias
+                </motion.div>
+    
         </div>
+
+
+
+</div>
+
+</div>
+
 
         
                     
@@ -274,34 +488,14 @@ const Sskills = () => {
 
 
 
-          
-        //</div>
-        //     id="skills"
-        //     className="bg-anaconda py-[50px] md:py-[100px] relative overflow-hidden lg:-mt-0 xs:columns-1 "
-        
-        //     {/* BACKGROUND ELEMENTS START */}
-        //     {/* <div className="sec-3-bg-gradient-1" />
-        //     <div className="sec-3-bg-gradient-2" /> */}
-        //     {/*BACKGROUND ELEMENTS END*/}
-        //     <div className="max-w-[1680px] px-5 md:px-10 mx-auto pt-[1px] xs:mt[-20px]"> 
 
+    );
 
-        //     {/* SERVICES SECTION START */}
-            
+};
 
+export default Sskills
 
-        //     <div className="flex  justify-between  py-[50px] md:py-[100px] relative  ">
-
-
-        //     {/* SECTION HEADING START */}
-        //     <div className=" flex lg:-mt-66  gap-2 text-[40px] md:text-[90px] xs:text-[36px] 2xl:text-[120px]  font-oswald uppercase text-gradient mb-10 md:mb-0 md:sticky top-2">
-        //                 <span className="mx-auto">Solving Problems Through Good Services e mais coisa que voce image</span>
-
-        //     </div>
-        //     {/* SERVICES START */}
-        //     <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10  ">
-        //                 <Service
-        //                     //num="1"
+//                     //num="1"
         //                     title="Computer Vision Solutions"
         //                     desc="A visão computacional na indústria oferece benefícios substanciais. Desde a otimização de processos de produção até a análise preditiva de falhas de equipamentos, a visão computacional com redes neurais convolucionais está redefinindo a forma como as organizações interpretam dados visuais para embasar decisões estratégicas."
         //                     data={[
@@ -412,7 +606,3 @@ const Sskills = () => {
 
         //     </div> 
         // </div>
-    );
-};
-
-export default Sskills
