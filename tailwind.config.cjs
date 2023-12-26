@@ -52,7 +52,8 @@ module.exports = {
         "anaconda":"#43b02a",
         "laranjaneon":"#ff4500",
         "rojoneon":"#e32636",
-        "carmesina":"#dc143c"
+        "carmesina":"#dc143c",
+        "rosachocante":"#fc0fc0"
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",

@@ -147,6 +147,22 @@ border-radius: 10px;
   left: -50px;
   position: absolute;
 }
+
+/* cli0 hove4r */
+.default-state {
+
+  clip-path: circle(20% at 120% 120%);
+
+}
+
+ 
+
+.hovered-state {
+
+  clip-path: circle(170% at 120% 120%);
+
+}
+
 /* @layer base {
 
   .btn {
