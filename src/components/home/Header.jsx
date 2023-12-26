@@ -134,7 +134,7 @@ function Header(){
   const { x, y } = useFollowPointer(ref);
   return (
 
- <div className="bg-black relative pt-12 pb-20 lg:pt-20  ">
+ <div className="bg-black relative pt-12 lg:pb-40 lg:pt-40  ">
 
       {/* <motion.span
                 ref={ref}
@@ -170,7 +170,7 @@ function Header(){
 
 
         <div className="lg:flex">
-            <div className=" relative -pr-32 lg:pr-32 mdl:mt-10 md:mt-10 sm:mt-10 mt-2 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
+            <div className=" relative -pr-32 lg:pr-32 mdl:mt-10 md:mt-10 sm:mt-20 mt-2 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
 
               <div className=" flex-[0.75] flex justify-center flex-col  mx-auto w-10/12 md:w-5/6 font-black text-azulciano lg:text-7xl text-center text-5xl lg:w-auto lg:text-left xl:text-7xl "
 
@@ -251,7 +251,7 @@ function Header(){
 
             <div className="  lg:absolute  lg:right-28  w-10/12 lg:w-6/12  "
 >
-                <motion.div className="relative w-full"                
+                <motion.div className="relative w-full "                
                 initial={{x:-200, opacity: 0 }}
                 //animate={{ x: 0, opacity: 1 }}
                 whileInView={{x: [200, 0], opacity: 1}}

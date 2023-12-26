@@ -42,9 +42,10 @@ const Sskills = () => {
     const y3 = useTransform(scrollY, [0, 2700], [2000, 0], { clamp: false });
     return (
 
-        <div className="bg-black grid  relatative   gap-4 lg:px-4 px-1 relative fluid-container  lg:grid-cols-2 grid-cols-1 md:gap-8  pt-10 ">
-
-           <div className="bg-black lg:grid-rows-2 grid-flow-col px-12 mb-4">
+        <div className="bg-black relatative  lg:px-4 px-1 relative fluid-container     ">
+        <div className="grid    gap-4 lg:grid-cols-2 grid-cols-1 md:gap-8 lg:pt-20 pt-20 pb-20"> 
+           <div className="bg-black lg:grid-rows-8 grid-flow-col px-12 mb-4">
+           
                 <div className="grid  lg:gap-[8px] lg:grid-cols-4 gap-2 grid-cols-2 ">
                     <motion.div href="#" draggable="false" aria-labelledby="title" className=" relative py-6 bg-gradient-to-r 
                                         from-rosachocante via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group lg:px-4 px-2"
@@ -72,9 +73,7 @@ const Sskills = () => {
                         <div className="uppercase font-sans tracking-wider lg:text-md text-lg">
                         Dataset
                         </div>
-                        {/* <span className="uppercase font-sans tracking-wider lg:text-2xl text-1xl">
-                        de Imagem
-                        </span> */}
+
                         <div className="lg:px-4 px-0 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
                             <span className=" lg:text-3lg  text-1xl uppercase font-light tracking-wider text-white ">Dataset </span>
@@ -135,42 +134,148 @@ const Sskills = () => {
                 </div>
 
                 </motion.div>
+ 
             </div>
-            <motion.div className="flex  justify-center lg:mb-4 mb-4 "
-                                initial={{ opacity: 0 }}
-                                //animate={{ y: 0, opacity: 1 }}
-                                whileInView={{x: [200, 0], opacity: 1}}
-                                transition={{ duration: 0.7, delay: 0.25 }}
-            >
-                <div href="#" draggable="false" aria-labelledby="title" className="relative py-6  group text-white  md:mx-12 xs:mx-2 itens-center text-left ">
 
-                <div className="lg:mt-10 lg:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:ml-8 xs:mr-8 uppercase  tracking-wider   font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent bg-clip-text">Soluções de Visão Computacional Personalizadas para  sua Empresa</div>
+            <div className="flex  justify-center lg:mb-4 mb-4 lg:grid-rows-8 grid-flow-col">
+                <motion.div className="lg:mt-10 lg:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-8 uppercase  tracking-wider   
+                font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
+                bg-clip-text"
+                initial={{ opacity: 0 }}
+                //animate={{ y: 0, opacity: 1 }}
+                whileInView={{x: [200, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                >Soluções de Visão Computacional Personalizadas para  sua Empresa
+                </motion.div>
+    
+            </div>
 
-                {/* <div className="absolute inset-0 py-6 px-12 bg-indigo-600 text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)] text-justify " aria-hidden="true">
 
-                <span className="lg:text-6xl text-3xl  uppercase font-light tracking-wider text-justify font-sans ">Soluções de Visão Computacional Personalizadas para atender demandas da sua Empresa</span>
+            <div className="grid    gap-4  md:gap-8 lg:pt-20 pb-4 pt-2"> 
+            <div className="bg-black lg:grid-rows-8 grid-flow-col px-12 mb-4">
+           
+                <div className="grid  lg:gap-[8px] lg:grid-cols-4 gap-2 grid-cols-2 ">
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className=" relative py-6 bg-gradient-to-r 
+                                        from-rosachocante via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group lg:px-4 px-2"
+                                        initial={{ opacity: 0 }}
+                                        //animate={{ y: 0, opacity: 1 }}
+                                        whileInView={{x: [100, 0], opacity: 1}}
+                                        transition={{ duration: 0.7, delay: 0.25 }}
+                                        >
+                        <span className=" uppercase font-sans tracking-wider lg:text-3lg text-1xl text-white ">
+                        Anotação de Objetos
+                        </span>
+                        <div className="lg:px-4  lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 px-12 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_130%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
 
-                </div> */}
+                            <span className="lg:text-3lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Objetos</span>
+
+                        </div>
+                    </motion.div>
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r from-rosachocante
+                     via-rojoneon to-anaconda lg:rounded-tl-lg rounded-lg group  lg:px-2 px-0"
+                     initial={{ opacity: 0 }}
+                     //animate={{ y: 0, opacity: 1 }}
+                     whileInView={{x: [-200, 0], opacity: 1}}
+                     transition={{ duration: 0.7, delay: 0.25 }}
+                     >
+                        <div className="uppercase font-sans tracking-wider lg:text-md text-lg">
+                        Anotação de Keypoints
+                        </div>
+
+                        <div className="lg:px-4 px-0 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                            <span className=" lg:text-3lg  text-1xl uppercase font-light tracking-wider text-white ">Dataset </span>
+                            <span className=" lg:text-2lg  text-1xl uppercase font-light tracking-wider text-white ">Preparação</span>
+
+                        </div>
+                    </motion.div>
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r
+                     from-rosachocante via-rojoneon to-anaconda  lg:rounded-tl-lg rounded-lg group  lg:px-4 px-2"
+                     initial={{ opacity: 0 }}
+                     //animate={{ y: 0, opacity: 1 }}
+                     whileInView={{y: [-200, 0], opacity: 1}}
+                     transition={{ duration: 0.7, delay: 0.25 }}
+                     >
+                        <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
+                        Anotação de Texto
+                        </span>
+                        <div className="lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6  bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                            <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white">Detecção de Anomalias</span>
+
+                        </div>
+                    </motion.div>
+                    <motion.div href="#" draggable="false" aria-labelledby="title" className="text-white relative py-6 bg-gradient-to-r 
+                    from-rosachocante via-rojoneon to-anaconda  lg:rounded-tl-lg rounded-lg group rounded-tr-lg lg:px-4 px-2"
+                    initial={{ opacity: 0 }}
+                    //animate={{ y: 0, opacity: 1 }}
+                    whileInView={{y: [-200, 0], opacity: 1}}
+                    transition={{ duration: 0.7, delay: 0.25 }}
+                    >
+                        <span className="uppercase font-sans tracking-wider lg:text-2lg text-1xl">
+                        Dataset Otimizado
+                        </span>
+                        <div className=" lg:px-4 px-2 lg:rounded-tl-lg rounded-lg absolute inset-0 py-6 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_10%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                            <span className="lg:text-2lg text-1xl  uppercase font-light tracking-wider text-white ">Controle de Qualidade Industrial</span>
+
+                        </div>
+                    </motion.div>
+                
+                    
+                    
+                </div>
+                <motion.div href="#" draggable="false" aria-labelledby="title" className="text-justify  relative  lg:py-6 my-2 lg:px-4 
+                 shadow-lg rounded-lg   shadow-rosachocante  group text-white hidden md:inline-block "
+                 initial={{ opacity: 0 }}
+                 //animate={{ y: 0, opacity: 1 }}
+                 whileInView={{y: [200, 0], opacity: 1}}
+                 transition={{ duration: 0.7, delay: 0.25 }}
+                 >
+
+                <div id="title" className="text-white lg:text-2xl text-3xl uppercase font-light tracking-wider  ">As anotações desempenham um papel crucial no desenvolvimento de soluções de visão computacional, especialmente em contextos de aprendizado supervisionado, onde os algoritmos precisam ser treinados com conjuntos de dados rotulados para realizar tarefas específicas. As anotações consistem em marcar ou identificar visualmente elementos específicos nas imagens ou vídeos, fornecendo informações de referência para o treinamento de modelos.</div>
+
+                <div className="rounded-lg absolute inset-0 py-6 px-4 bg-anaconda text-white motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_-20%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true">
+
+                    <span className="lg:text-2xl text-3xl  uppercase font-light tracking-wider rounded-br-lg ">As anotações desempenham um papel crucial no desenvolvimento de soluções de visão computacional, especialmente em contextos de aprendizado supervisionado, onde os algoritmos precisam ser treinados com conjuntos de dados rotulados para realizar tarefas específicas. As anotações consistem em marcar ou identificar visualmente elementos específicos nas imagens ou vídeos, fornecendo informações de referência para o treinamento de modelos.</span>
 
                 </div>
-            </motion.div>
 
-            {/* <Service
-                //num="1"
-                title="Computer Vision Solutions"
-                desc="A visão computacional na indústria oferece benefícios substanciais. Desde a otimização de processos de produção até a análise preditiva de falhas de equipamentos, a visão computacional com redes neurais convolucionais está redefinindo a forma como as organizações interpretam dados visuais para embasar decisões estratégicas."
-                data={[
-                        "Detecção de Objetos",
-                        "Segmentação de Imagem",
-                        "Detecção de Anomalias",
-                        "Controle de Qualidade Industrial",
-                        "Redes Neurais Convolucionais (CNNs)",
-                    ]}
-            /> */}
-          
+                </motion.div>
+ 
+            </div>
+            </div>
+            <div className="flex  justify-center lg:mb-4 mb-0 mt-0 lg:grid-rows-8 grid-flow-col ">
+                <motion.div className="lg:mt-40 lg:text-7xl mdl:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-12 uppercase  tracking-wider   
+                font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
+                bg-clip-text"
+                initial={{ opacity: 0 }}
+                //animate={{ y: 0, opacity: 1 }}
+                whileInView={{x: [200, 0], opacity: 1}}
+                transition={{ duration: 0.7, delay: 0.25 }}
+                >Anotamos e criamos seu datasets sob medida para  projetos de IA
+                </motion.div>
+    
+            </div>
 
+
+                
 
         </div>
+
+        
+                    
+
+
+
+
+
+
+
+
+
+          
+        //</div>
         //     id="skills"
         //     className="bg-anaconda py-[50px] md:py-[100px] relative overflow-hidden lg:-mt-0 xs:columns-1 "
         
