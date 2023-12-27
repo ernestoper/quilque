@@ -43,7 +43,9 @@ const Sskills = () => {
     return (
 
         <div className="bg-black relatative  lg:px-4 px-1 relative fluid-container     ">
-        <div className="grid    gap-4 lg:grid-cols-2 grid-cols-1 md:gap-8 lg:pt-20 pt-20 pb-20"> 
+            <div className=" lg:ml-12 pt-10 lg:text-left text-center bg-clip-text text-transparent lg:text-6xl text-4xl bg-gradient-to-r 
+                                        from-rosachocante via-rojoneon to-anaconda"> Serviços: </div>
+        <div className="grid    gap-4 lg:grid-cols-2 grid-cols-1 md:gap-8 lg:pt-10 pt-20 pb-20"> 
            <div className="bg-black lg:grid-rows-8 grid-flow-col px-12 mb-4">
            
                 <div className="grid  lg:gap-[8px] lg:grid-cols-4 gap-2 grid-cols-2 ">
@@ -118,7 +120,7 @@ const Sskills = () => {
                     
                 </div>
                 <motion.div href="#" draggable="false" aria-labelledby="title" className="text-justify  relative py-6 my-2 lg:px-4 
-                 shadow-lg rounded-lg -mx-0  shadow-rosachocante  group text-white hidden md:inline-block "
+                 shadow-lg rounded-lg  shadow-rosachocante  group text-white hidden md:inline-block  "
                  initial={{ opacity: 0 }}
                  //animate={{ y: 0, opacity: 1 }}
                  whileInView={{y: [200, 0], opacity: 1}}
@@ -137,8 +139,8 @@ const Sskills = () => {
  
             </div>
 
-            <div className="flex  justify-center lg:mb-4 mb-4 lg:grid-rows-8 grid-flow-col">
-                <motion.div className="lg:mt-10 lg:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-8 uppercase  tracking-wider   
+            <div className="flex  justify-center lg:mb-4  lg:grid-rows-8 grid-flow-col  ">
+                <motion.div className="lg:mt-10 lg:text-6xl text-4xl ml-10 mr-10 xs:ml-12 xs:text-3xl   uppercase  tracking-wider   
                 font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
                 bg-clip-text"
                 initial={{ opacity: 0 }}
@@ -352,7 +354,7 @@ const Sskills = () => {
  
             </div>
             <div className="flex  justify-center lg:mb-4 mb-0 mt-0 lg:grid-rows-8 grid-flow-col ">
-                <motion.div className="lg:mt-10 lg:text-7xl mdl:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-12 uppercase  tracking-wider   
+                <motion.div className="lg:mt-10 lg:text-6xl text-4xl ml-10 mr-10 xs:ml-12 xs:text-3xl   uppercase  tracking-wider   
                 font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
                 bg-clip-text"
                 initial={{ opacity: 0 }}
@@ -458,7 +460,7 @@ const Sskills = () => {
        </div>
 
        <div className="flex  justify-center lg:mb-4 mb-0 mt-0 lg:grid-rows-8 grid-flow-col ">
-                <motion.div className="lg:mt-10 lg:text-7xl mdl:text-6xl text-4xl sm:ml-8 sm:mr-6 xs:pl-4 xs:mr-12 uppercase  tracking-wider   
+                <motion.div className="lg:mt-10 lg:text-6xl text-4xl ml-10 mr-10 xs:ml-12 xs:text-3xl   uppercase  tracking-wider   
                 font-sans  bg-gradient-to-r from-verdeneon via-white to-verdeneon inline-block text-transparent 
                 bg-clip-text"
                 initial={{ opacity: 0 }}
